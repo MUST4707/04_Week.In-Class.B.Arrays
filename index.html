@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Arrays</title>
+    <script src="script.js" type="module"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 3px 6px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+<h1>Introduction to Arrays</h1>
+<p>An <strong>array</strong> is a data structure that allows you to store multiple values in a single variable. Each value in an array is called an <strong>element</strong>, and each element has a numbered position called an <strong>index</strong>.</p>
+
+<h2>Defining an Array</h2>
+<p>Arrays in JavaScript can be defined using square brackets:</p>
+<code>let fruits = ["Apple", "Banana", "Cherry"];</code>
+
+<h2>Accessing Elements with Bracket Notation</h2>
+<p>Array elements are accessed using their index, starting from <code>0</code> by typing the array name followed by <code>[]</code> with the index number inside.:</p>
+<code>console.log(fruits[0]); // Apple</code>
+<p>You can also access elements using a dynamic index using variables:</p>
+<code>let index = 2;<br>console.log(fruits[index]); // Cherry</code>
+
+<h3>Understanding <code>Bracket Notation</code></h3>
+<p>When you write <code>myArray[0]</code>, you are accessing the first element of the array. <code>myArray[0]</code> accesses the second element and so on.</p>
+<ul>
+    <li><strong>Indexing Starts at 0</strong>: Arrays in JavaScript are zero-indexed, meaning the first element is at index <code>0</code>.</li>
+    <li><strong>Retrieving a Value</strong>: <code>myArray[0]</code> gets the first element:</li>
+    <code>let myArray = ["Apple", "Banana", "Cherry"];<br>console.log(myArray[0]); // Apple</code>
+    <li><strong>Modifying a Value</strong>: You can change the value at index <code>0</code>:</li>
+    <code>myArray[0] = "Mango";<br>console.log(myArray); // ["Mango", "Banana", "Cherry"]</code>
+    <li><strong>Accessing Out-of-Bounds Indexes</strong>: If you try to access an index that doesn’t exist:</li>
+    <code>console.log(myArray[10]); // undefined</code>
+</ul>
+
+<h2>Array Length</h2>
+<p>The <code>length</code> property returns the number of elements in an array:</p>
+<code>console.log(fruits.length); // 3</code>
+
+<h2>Adding and Removing Elements</h2>
+<ul>
+    <li><strong>push()</strong>: Adds an element to the end of the array.</li>
+    <code>fruits.push("Orange"); // ["Apple", "Banana", "Cherry", "Orange"]</code>
+
+    <li><strong>pop()</strong>: Removes the last element from the array.</li>
+    <code>fruits.pop(); // ["Apple", "Banana", "Cherry"]</code>
+
+    <li><strong>unshift()</strong>: Adds an element to the beginning of the array.</li>
+    <code>fruits.unshift("Mango"); // ["Mango", "Apple", "Banana", "Cherry"]</code>
+
+    <li><strong>shift()</strong>: Removes the first element from the array.</li>
+    <code>fruits.shift(); // ["Apple", "Banana", "Cherry"]</code>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Arrays are powerful tools for managing collections of data in JavaScript. Understanding how to define, access, and modify arrays is essential for effective programming.</p>
+</body>
+</html>
