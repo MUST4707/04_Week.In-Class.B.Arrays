@@ -15,7 +15,9 @@ Accessing Elements with Bracket Notation
 
 Array elements are accessed using their index, starting from `0` by typing the array name followed by `[]` with the index number inside.:
 
-`console.log(fruits[0]); // Apple`
+```js
+console.log(fruits[0]); // Apple
+```
 
 You can also access elements using a dynamic index using variables:
 
