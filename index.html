@@ -15,8 +15,11 @@
         }
         code {
             background: #f4f4f4;
-            padding: 3px 6px;
+            padding: 10px;
             border-radius: 4px;
+            overflow-x: auto;
+            display: block;
+            white-space: pre;
         }
     </style>
 </head>
@@ -56,13 +59,24 @@
     <code>fruits.push("Orange"); // ["Apple", "Banana", "Cherry", "Orange"]</code>
 
     <li><strong>pop()</strong>: Removes the last element from the array.</li>
-    <code>fruits.pop(); // ["Apple", "Banana", "Cherry"]</code>
+    <code>
+    fruits.pop(); // ["Apple", "Banana", "Cherry"]
+
+    //this method also returns that element, which means you can save it to a variable
+    let someFruit = fruits.pop(); // ["Apple", "Banana"]
+    console.log(someFruit); // "Cherry"</code>
 
     <li><strong>unshift()</strong>: Adds an element to the beginning of the array.</li>
     <code>fruits.unshift("Mango"); // ["Mango", "Apple", "Banana", "Cherry"]</code>
 
     <li><strong>shift()</strong>: Removes the first element from the array.</li>
-    <code>fruits.shift(); // ["Apple", "Banana", "Cherry"]</code>
+    <code>
+    fruits.shift(); // ["Apple", "Banana"]
+
+    //like the .pop() method, .shift() also returns the element it removes, which means you can save it to a variable
+    let newFruit = fruits.shift(); // ["Banana"]
+    console.log(newFruit); // "Apple"
+    </code>
 </ul>
 
 <h2>Conclusion</h2>
